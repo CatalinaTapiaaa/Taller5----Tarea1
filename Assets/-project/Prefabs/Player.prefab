@@ -4958,7 +4958,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2828738223661411841}
   - component: {fileID: 7587255979641763657}
-  - component: {fileID: 7239947817810494662}
   - component: {fileID: 4847483382394500202}
   - component: {fileID: 2980391767030040796}
   - component: {fileID: 1998358100343056355}
@@ -5013,41 +5012,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &7239947817810494662
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4890812721321760435}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 3a3a3c95dec9b80439e343a02cc74e10, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.00036764145}
-  serializedVersion: 2
-  m_Radius: 0.37571144
 --- !u!61 &4847483382394500202
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5080,7 +5044,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.34413815}
+  m_Offset: {x: 0, y: 0.0015921593}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5091,7 +5055,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25017548, y: 0.06276512}
+  m_Size: {x: 0.75, y: 0.75422573}
   m_EdgeRadius: 0
 --- !u!114 &2980391767030040796
 MonoBehaviour:
@@ -5105,13 +5069,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f535d8bd01ca93141a3f65b2a4778dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 0}
+  explosion: {fileID: 3825863484476496914, guid: df673db52e7cd3244b02854805c2f28a, type: 3}
   clipMove: {fileID: 8300000, guid: d77055e799cbe7345a745a2029c2e695, type: 3}
   clipJump: {fileID: 8300000, guid: a314e89e94f1596418bea52b3dc61d88, type: 3}
   clipDeath: {fileID: 8300000, guid: 675aae97c6288b64795dc124f63a7444, type: 3}
   aniMove: {fileID: 1998358100343056355}
   speed: 0
-  jumpForce: 0
+  limSpeed: 1000
+  jumpForce: 600
   groundLayer:
     serializedVersion: 2
     m_Bits: 8

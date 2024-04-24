@@ -6163,17 +6163,7 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 49699432}
-    m_ColliderPaths:
-    - - X: 110000000
-        Y: -60000000
-      - X: 100000000
-        Y: -60000000
-      - X: 100000000
-        Y: -70000000
-      - X: 110000000
-        Y: -70000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 10.99997, y: -7}
@@ -6894,7 +6884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd1ad1d972e5a6b48b52a2113b368412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1649457543}
 --- !u!95 &592729470
 Animator:
   serializedVersion: 5
@@ -7392,7 +7382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelPause: {fileID: 1245293382}
-  aniTransition: {fileID: 0}
+  aniTransition: {fileID: 592729470}
   cam: {fileID: 2082643184}
   bar: {fileID: 1426326646}
   addSpeedPlayer: 100
@@ -8006,6 +7996,150 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213728317}
   m_CullTransparentMesh: 1
+--- !u!1 &1230706052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1230706055}
+  - component: {fileID: 1230706054}
+  - component: {fileID: 1230706053}
+  m_Layer: 0
+  m_Name: -Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1230706053
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230706052}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1230706054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230706052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29bfc1bc23729b34ab950153940f77ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clipMusic: {fileID: 8300000, guid: 6c539d07919c5ea4a8591bb859948da1, type: 3}
+  clipVictory: {fileID: 0}
+  clipGameOver: {fileID: 0}
+--- !u!4 &1230706055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230706052}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245293382
 GameObject:
   m_ObjectHideFlags: 0
@@ -8397,6 +8531,147 @@ Transform:
   - {fileID: 74755752}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1413891535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1413891538}
+  - component: {fileID: 1413891537}
+  - component: {fileID: 1413891536}
+  m_Layer: 0
+  m_Name: -Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1413891536
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413891535}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1413891537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413891535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34bad8e02e8d01f40b73bcdcd7b7cae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1413891538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413891535}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1415191510
 GameObject:
   m_ObjectHideFlags: 0
@@ -8469,225 +8744,7 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1415191513}
-    m_ColliderPaths:
-    - - X: 35000000
-        Y: 34375000
-      - X: 35000000
-        Y: 35625000
-      - X: 30625000
-        Y: 40000000
-      - X: 35000000
-        Y: 44375000
-      - X: 35000000
-        Y: 45625000
-      - X: 30625000
-        Y: 50000000
-      - X: 35000000
-        Y: 54375000
-      - X: 35000000
-        Y: 55625000
-      - X: 30625000
-        Y: 60000000
-      - X: 30000000
-        Y: 60000000
-      - X: 30000000
-        Y: 30000000
-      - X: 30625000
-        Y: 30000000
-    - - X: -30000000
-        Y: 60000000
-      - X: -30625000
-        Y: 60000000
-      - X: -35000000
-        Y: 55625000
-      - X: -35000000
-        Y: 54375000
-      - X: -30625000
-        Y: 50000000
-      - X: -35000000
-        Y: 45625000
-      - X: -35000000
-        Y: 44375000
-      - X: -30625000
-        Y: 40000000
-      - X: -35000000
-        Y: 35625000
-      - X: -35000000
-        Y: 34375000
-      - X: -30625000
-        Y: 30000000
-      - X: -30000000
-        Y: 30000000
-    - - X: -20000000
-        Y: 29375000
-      - X: -15625000
-        Y: 25000000
-      - X: -14375000
-        Y: 25000000
-      - X: -10000000
-        Y: 29375000
-      - X: -5625000
-        Y: 25000000
-      - X: -4375000
-        Y: 25000000
-      - X: 0
-        Y: 29375000
-      - X: 4375000
-        Y: 25000000
-      - X: 5625000
-        Y: 25000000
-      - X: 10000000
-        Y: 29375000
-      - X: 14375000
-        Y: 25000000
-      - X: 15625000
-        Y: 25000000
-      - X: 20000000
-        Y: 29375000
-      - X: 24375000
-        Y: 25000000
-      - X: 25625000
-        Y: 25000000
-      - X: 30000000
-        Y: 29375000
-      - X: 30000000
-        Y: 30000000
-      - X: -30000000
-        Y: 30000000
-      - X: -30000000
-        Y: 29375000
-      - X: -25625000
-        Y: 25000000
-      - X: -24375000
-        Y: 25000000
-    - - X: 70000000
-        Y: 30000000
-      - X: 69375000
-        Y: 30000000
-      - X: 65000000
-        Y: 25625000
-      - X: 65000000
-        Y: 24375000
-      - X: 69375000
-        Y: 20000000
-      - X: 65000000
-        Y: 15625000
-      - X: 65000000
-        Y: 14375000
-      - X: 69375000
-        Y: 10000000
-      - X: 70000000
-        Y: 10000000
-    - - X: 70000000
-        Y: -10000000
-      - X: 69375000
-        Y: -10000000
-      - X: 65000000
-        Y: -14375000
-      - X: 65000000
-        Y: -15625000
-      - X: 69375000
-        Y: -20000000
-      - X: 65000000
-        Y: -24375000
-      - X: 65000000
-        Y: -25625000
-      - X: 69375000
-        Y: -30000000
-      - X: 70000000
-        Y: -30000000
-    - - X: 30000000
-        Y: -29375000
-      - X: 25625000
-        Y: -25000000
-      - X: 24375000
-        Y: -25000000
-      - X: 20000000
-        Y: -29375000
-      - X: 15625000
-        Y: -25000000
-      - X: 14375000
-        Y: -25000000
-      - X: 10000000
-        Y: -29375000
-      - X: 5625000
-        Y: -25000000
-      - X: 4375000
-        Y: -25000000
-      - X: 0
-        Y: -29375000
-      - X: -4375000
-        Y: -25000000
-      - X: -5625000
-        Y: -25000000
-      - X: -10000000
-        Y: -29375000
-      - X: -14375000
-        Y: -25000000
-      - X: -15625000
-        Y: -25000000
-      - X: -20000000
-        Y: -29375000
-      - X: -24375000
-        Y: -25000000
-      - X: -25625000
-        Y: -25000000
-      - X: -30000000
-        Y: -29375000
-      - X: -30000000
-        Y: -30000000
-      - X: 30000000
-        Y: -30000000
-    - - X: -30000000
-        Y: -30000000
-      - X: -30625000
-        Y: -30000000
-      - X: -35000000
-        Y: -34375000
-      - X: -35000000
-        Y: -35625000
-      - X: -30625000
-        Y: -40000000
-      - X: -35000000
-        Y: -44375000
-      - X: -35000000
-        Y: -45625000
-      - X: -30625000
-        Y: -50000000
-      - X: -35000000
-        Y: -54375000
-      - X: -35000000
-        Y: -55625000
-      - X: -30625000
-        Y: -60000000
-      - X: -30000000
-        Y: -60000000
-    - - X: 35000000
-        Y: -55625000
-      - X: 35000000
-        Y: -54375000
-      - X: 30625000
-        Y: -50000000
-      - X: 35000000
-        Y: -45625000
-      - X: 35000000
-        Y: -44375000
-      - X: 30625000
-        Y: -40000000
-      - X: 35000000
-        Y: -35625000
-      - X: 35000000
-        Y: -34375000
-      - X: 30625000
-        Y: -30000000
-      - X: 30000000
-        Y: -30000000
-      - X: 30000000
-        Y: -60000000
-      - X: 30625000
-        Y: -60000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: 3.0624893, y: 3}
@@ -9635,6 +9692,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1649457543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4890812721321760435, guid: 2456d975d9f7cea49bc8abd45c9ee1e6, type: 3}
+  m_PrefabInstance: {fileID: 320758246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1688573871
 GameObject:
   m_ObjectHideFlags: 0
@@ -17551,73 +17613,7 @@ CompositeCollider2D:
   m_GeometryType: 0
   m_GenerationType: 0
   m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 1955109308}
-    m_ColliderPaths:
-    - - X: -20000000
-        Y: -40000000
-      - X: 20000000
-        Y: -40000000
-      - X: 20000000
-        Y: -70000000
-      - X: 100000000
-        Y: -70000000
-      - X: 100000000
-        Y: -60000000
-      - X: 30000000
-        Y: -60000000
-      - X: 30000000
-        Y: -30000000
-      - X: -30000000
-        Y: -30000000
-      - X: -30000000
-        Y: -60000000
-      - X: -120000000
-        Y: -60000000
-      - X: -120000000
-        Y: 60000000
-      - X: -30000000
-        Y: 60000000
-      - X: -30000000
-        Y: 30000000
-      - X: 30000000
-        Y: 30000000
-      - X: 30000000
-        Y: 60000000
-      - X: 120000000
-        Y: 60000000
-      - X: 120000000
-        Y: -60000000
-      - X: 110000000
-        Y: -60000000
-      - X: 110000000
-        Y: -70000000
-      - X: 130000000
-        Y: -70000000
-      - X: 130000000
-        Y: 70000000
-      - X: 20000000
-        Y: 70000000
-      - X: 20000000
-        Y: 40000000
-      - X: -20000000
-        Y: 40000000
-      - X: -20000000
-        Y: 70000000
-      - X: -130000000
-        Y: 70000000
-      - X: -130000000
-        Y: -70000000
-      - X: -20000000
-        Y: -70000000
-    - - X: 90000000
-        Y: 30000000
-      - X: 70000000
-        Y: 30000000
-      - X: 70000000
-        Y: -30000000
-      - X: 90000000
-        Y: -30000000
+  m_ColliderPaths: []
   m_CompositePaths:
     m_Paths:
     - - {x: -2.0000293, y: -7}
@@ -18899,7 +18895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1990466503
 Transform:
   m_ObjectHideFlags: 0
@@ -19151,3 +19147,5 @@ SceneRoots:
   - {fileID: 1990466503}
   - {fileID: 514991662}
   - {fileID: 1456489911}
+  - {fileID: 1413891538}
+  - {fileID: 1230706055}

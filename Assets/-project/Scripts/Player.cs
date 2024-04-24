@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     [Header("Movement")]
     public Animator aniMove;
     public float speed;
+    public float limSpeed;
     public float jumpForce;
     Vector2 move;
     bool flip;
@@ -46,7 +47,11 @@ public class Player : MonoBehaviour
             move = new Vector2(h, v);
 
             aniMove.SetFloat("Move", Mathf.Abs(h));
-            speed += GameManager.speedPlayer * Time.deltaTime;
+
+            if (speed < limSpeed)
+            {
+                speed += GameManager.speedPlayer * Time.deltaTime;
+            }
 
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
             {
