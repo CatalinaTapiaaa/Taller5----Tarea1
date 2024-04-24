@@ -68,11 +68,13 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(Tremor());
         FindObjectOfType<Player>().isDeath();
+        MusicManager.Instance.GameOver();
     }
     void Victory()
     {
         StartCoroutine(EndVictory());
         stopPlayer = true;
+        MusicManager.Instance.Victory();
     }
 
     IEnumerator Tremor()
@@ -104,6 +106,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator StartGame()
     {
+        MusicManager.Instance.Music();
         aniTransition.SetBool("Active", true);
         yield return new WaitForSeconds(1);
         stopPlayer = false;

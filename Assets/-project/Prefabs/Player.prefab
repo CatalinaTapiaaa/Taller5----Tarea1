@@ -5106,6 +5106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 0}
+  clipMove: {fileID: 8300000, guid: d77055e799cbe7345a745a2029c2e695, type: 3}
+  clipJump: {fileID: 8300000, guid: a314e89e94f1596418bea52b3dc61d88, type: 3}
+  clipDeath: {fileID: 8300000, guid: 675aae97c6288b64795dc124f63a7444, type: 3}
   aniMove: {fileID: 1998358100343056355}
   speed: 0
   jumpForce: 0

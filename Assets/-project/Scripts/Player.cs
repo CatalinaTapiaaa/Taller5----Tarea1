@@ -6,6 +6,10 @@ using static UnityEngine.ParticleSystem;
 public class Player : MonoBehaviour
 {
     public GameObject explosion;
+    [Header("Audio Effect")]
+    public AudioClip clipMove;
+    public AudioClip clipJump;
+    public AudioClip clipDeath;
     [Header("Movement")]
     public Animator aniMove;
     public float speed;
@@ -25,6 +29,11 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = new Vector2(move.x * speed * Time.deltaTime, rb.velocity.y);
+
+        if (isGrounded() && move.magnitude > 0)
+        {
+            SoundManager.Instance.EjecutarSonido(clipMove);
+        }
     }
     void Update()
     {
@@ -41,6 +50,7 @@ public class Player : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
             {
+                SoundManager.Instance.EjecutarSonido(clipJump);
                 rb.AddForce(Vector2.up * jumpForce);
                 aniMove.SetTrigger("Take Of");
             } 
@@ -101,6 +111,7 @@ public class Player : MonoBehaviour
     public void isDeath()
     {
         Instantiate(explosion, transform.position, Quaternion.identity);
+        SoundManager.Instance.EjecutarSonido(clipDeath);
         Destroy(gameObject);
     }
 }
